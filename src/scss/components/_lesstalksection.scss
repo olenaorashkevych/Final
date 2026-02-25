@@ -1,0 +1,67 @@
+/* Блок less-talk */
+.less-talk {
+    padding: 60px 0;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 80px;
+        margin-top: 200px;
+        background-color: aqua;
+    }
+
+    &__image {
+        flex: 1;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        max-width: 640px;
+
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 56px;
+        color: #181817;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        font-size: 22px;
+        color: #181817;
+        margin-bottom: 40px;
+        max-width: 664px;
+        font-weight: 400;
+        line-height: 155%;
+    }
+
+    &__button {
+        padding: 16px 32px;
+        border-radius: 8px;
+        background: #ff9f0e;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        width: fit-content;
+
+        &:hover {
+            background: #ffb84d;
+        }
+
+        &-lower {
+            text-transform: lowercase;
+        }
+    }
+}
