@@ -55,7 +55,7 @@ export default function ServicesSection() {
           <div className="services__card services__card--more">
             <div className="services__card-content">
               <p className="services__more-text">
-                More<br />Services
+                more services
               </p>
             </div>
           </div>

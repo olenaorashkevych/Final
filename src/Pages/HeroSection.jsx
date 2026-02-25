@@ -25,8 +25,12 @@ export default function HeroSection() {
   <svg className="hero__detail-item detail-6">
     <use href="public/images/sprite.svg#Paw-2" />
   </svg>
+  
   <svg className="hero__detail-item detail-7">
     <use href="public/images/sprite.svg#Paw-3" />
+  </svg>
+  <svg className="hero__detail-item detail-8">
+    <use href="public/images/sprite.svg#arrow" />
   </svg>
           </div>
         </div>
