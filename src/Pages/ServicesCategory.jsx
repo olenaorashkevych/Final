@@ -11,7 +11,9 @@ export default function ServicesSection() {
           <div className="services__card">
             <div className="services__card-content">
               <div className="services__icon">
-                {/* SVG */}
+              <svg className="services__icon-1">
+    <use href="public/images/sprite.svg#service1" />
+  </svg>
               </div>
               <p className="services__name">Grooming</p>
             </div>
@@ -20,7 +22,9 @@ export default function ServicesSection() {
           <div className="services__card">
             <div className="services__card-content">
               <div className="services__icon">
-                {/* SVG */}
+              <svg className="services__icon-2">
+    <use href="public/images/sprite.svg#service2" />
+  </svg>
               </div>
               <p className="services__name">Nutrition</p>
             </div>
@@ -29,7 +33,9 @@ export default function ServicesSection() {
           <div className="services__card">
             <div className="services__card-content">
               <div className="services__icon">
-                {/* SVG */}
+              <svg className="services__icon-3">
+    <use href="public/images/sprite.svg#service3" />
+  </svg>
               </div>
               <p className="services__name">Training</p>
             </div>
@@ -38,7 +44,9 @@ export default function ServicesSection() {
           <div className="services__card">
             <div className="services__card-content">
               <div className="services__icon">
-                {/* SVG */}
+              <svg className="services__icon-4">
+    <use href="public/images/sprite.svg#service1" />
+  </svg>
               </div>
               <p className="services__name">Bathing</p>
             </div>
