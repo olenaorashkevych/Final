@@ -1,0 +1,89 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 115px;
+    padding: 16px 32px;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &-img {
+            width: 183px;
+            height: auto;
+
+        }
+    }
+
+    &__brand {
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        color: #ff9f0e;
+        line-height: 1;
+
+        &-main {
+            font-size: 32px;
+        }
+
+        &-sub {
+            font-size: 24px;
+            font-weight: 300;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        gap: 48px;
+
+        a {
+            font-size: 18px;
+            color: #181817;
+            text-decoration: none;
+
+            &.header__nav-active {
+                font-weight: 700;
+            }
+
+            &:hover,
+            &.header__nav-active {
+                color: #ff9f0e;
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        .header__btn {
+            padding: 16px 32px;
+            border-radius: 8px;
+            background: #ff9f0e;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background: #ffb84d;
+            }
+        }
+
+        .header__cart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: var(--dog-landing-3-s1);
+
+            &:hover {
+                color: #ffb84d;
+            }
+        }
+    }
+}

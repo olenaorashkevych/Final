@@ -1,0 +1,73 @@
+/* Модальне вікно */
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    max-width: 732px;
+    max-height: 681px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up.order-call {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    /* для кнопки закриття */
+
+}
+
+.close-modal {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background: none;
+    border: none;
+    font-size: 32px;
+}
+
+.sign-up.order-call .order-call-title {
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    color: var(--beauty-landing-2-background);
+}
+
+.sign-up.order-call .order-call-title-small {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: var(--beauty-landing-2-background);
+
+}
+
+.order-call-title-small span {
+    color: var(--beauty-landing-2-s2)
+}
+
+
+
+.order-call-text-button-holder {
+    max-width: 310px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.order-call-button {
+    display: block;
+    margin: 24px auto 0;
+}

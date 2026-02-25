@@ -1,0 +1,121 @@
+/* Стилі для всіх сторінок і блоків */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dog-landing-3-c4);
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Rowdies", sans-serif;
+    font-weight: bold;
+}
+
+svg {
+    width: 1em;
+    height: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.font-2 {
+    font-family: "Rowdies", sans-serif;
+}
+
+.container {
+    --size: 1242px;
+    --padding: 30px;
+
+    margin: 0px auto;
+    padding: 0px var(--padding);
+    width: 100%;
+    max-width: calc(var(--size) + (var(--padding) * 2));
+    position: relative;
+
+
+    @include respond(md) {
+        padding: 0px 20px;
+    }
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-align-items {
+    align-items: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.gap-32px {
+    gap: 32px;
+}
+
+.gap-56px {
+    gap: 56px;
+}
+
+.font-base {
+    font-family: var(--font-family);
+}
+
+.font-2 {
+    font-family: var(--second-family);
+}
+
+.font-3 {
+    font-family: var(--third-family);
+}
+
+
+
+.btn {
+    --bg: #5c62ec;
+    --color: #fff;
+    background-color: var(--beauty-landing-2-s2);
+    color: var(--color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 10px 28px;
+    border-radius: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.2s ease-in;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        color: var(--color);
+        opacity: 0.8;
+        transition: 0.2s;
+    }
+}

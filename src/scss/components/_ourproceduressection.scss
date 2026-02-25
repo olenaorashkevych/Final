@@ -1,0 +1,91 @@
+/* секція Наші процедури */
+.our-procedures-section-button {
+    background: none;
+    border: none;
+    padding-right: 22px;
+
+}
+
+.our_procedures_text_card_holder {
+    text-align: center;
+    max-width: 1216px;
+    gap: 48px;
+
+}
+
+.our_procedures_tex_holder span {
+    color: var(--beauty-landing-2-s2);
+}
+
+.our_procedures_card_holder {
+    margin-top: 60px;
+    gap: 12px;
+
+
+
+}
+
+.our_procedures_card_holder .im-bg {
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+    height: 456px;
+    border-radius: 4px 120px;
+    background-size: cover;
+}
+
+.our_procedures_card_holder .im-bg-1 {
+    background-image: linear-gradient(180deg,
+            rgba(1, 28, 68, 0) 47.4%,
+            rgba(1, 28, 68, 0.73) 82.66%,
+            #011c44 99.06%),
+        url("../css/images/image1580opt.jpg");
+}
+
+.our_procedures_card_holder .im-bg-2 {
+    background-image: linear-gradient(180deg,
+            rgba(1, 28, 68, 0) 47.4%,
+            rgba(1, 28, 68, 0.73) 82.66%,
+            #011c44 99.06%),
+        url("../css/images/image1570opt.jpg");
+
+
+
+}
+
+.our_procedures_card_holder .im-bg-3 {
+    background-image: linear-gradient(180deg,
+            rgba(1, 28, 68, 0) 47.4%,
+            rgba(1, 28, 68, 0.73) 82.66%,
+            #011c44 99.06%),
+        url("../css/images/image1574opt.jpg");
+}
+
+.our_procedures_card_holder .im-bg-1,
+.our_procedures_card_holder .im-bg-2,
+.our_procedures_card_holder .im-bg-3 {
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 32px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 118%;
+    text-align: center;
+    color: var(--beauty-landing-2-background);
+
+}
+
+.swiper-pagination {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+
+
+
+}
+
+.our_procedures-section {
+    margin-bottom: 90px;
+}
