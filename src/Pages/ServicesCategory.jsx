@@ -2,6 +2,9 @@ export default function ServicesSection() {
   return (
     <section className="services">
       <div className="container">
+      <svg className="services__icon services__icon--big-arrow">
+  <use href="/images/sprite.svg#arrowBig" />
+</svg>
         <h2 className="services__title">
           Services category
         </h2>
@@ -45,7 +48,7 @@ export default function ServicesSection() {
             <div className="services__card-content">
               <div className="services__icon">
               <svg className="services__icon-4">
-    <use href="public/images/sprite.svg#service1" />
+    <use href="public/images/sprite.svg#service4" />
   </svg>
               </div>
               <p className="services__name">Bathing</p>
@@ -55,7 +58,9 @@ export default function ServicesSection() {
           <div className="services__card services__card--more">
             <div className="services__card-content">
               <p className="services__more-text">
-                more services
+                more services  <svg className="services__icon-5">
+    <use href="public/images/sprite.svg#Arrowtiny"/>
+  </svg>
               </p>
             </div>
           </div>

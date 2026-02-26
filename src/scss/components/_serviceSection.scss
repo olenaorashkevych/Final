@@ -3,6 +3,7 @@
 
     &__title {
         font-size: 56px;
+        font-weight: 400;
         color: #181817;
         text-align: center;
         margin-bottom: 64px;
@@ -37,9 +38,7 @@
             display: flex;
             align-items: flex-end;
 
-            //     // &:hover {
-            //     //     background: #ffb84d;
-            //     // }
+
         }
     }
 
@@ -58,6 +57,17 @@
             width: 100%;
             height: 100%;
         }
+
+        &--big-arrow {
+            position: absolute;
+            top: -128px;
+            right: -21px;
+            width: 201px;
+            height: 156px;
+            color: var(--dog-landing-3-s2);
+        }
+
+
     }
 
     &__name {
@@ -67,9 +77,14 @@
     }
 
     &__more-text {
-        font-size: 22px;
-        font-weight: 600;
-        color: #ff9f0e;
+
+        font-weight: 400;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 133%;
+        letter-spacing: 0.05em;
+        color: var(--dog-landing-3-s1);
 
 
     }
