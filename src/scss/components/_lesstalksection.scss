@@ -1,31 +1,42 @@
 /* Блок less-talk */
 .less-talk {
-    padding: 60px 0;
 
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 80px;
-        margin-top: 200px;
-        background-color: aqua;
+        justify-content: flex-end;
+        margin-top: 210px;
+        padding-bottom: 160px;
+
     }
 
     &__image {
-        flex: 1;
 
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
+        .img-dog {
+            position: absolute;
+            left: -122px;
+            top: -152px;
+        }
+
+        .img-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .img-button {
+            position: absolute;
         }
     }
 
     &__content {
-        flex: 1;
+
         display: flex;
         flex-direction: column;
         max-width: 640px;
+        width: 100%;
+
 
     }
 
