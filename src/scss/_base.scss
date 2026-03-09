@@ -30,6 +30,7 @@ h6 {
 svg {
     width: 1em;
     height: 1em;
+    fill: currentColor;
 }
 
 a {
@@ -118,4 +119,55 @@ button {
         opacity: 0.8;
         transition: 0.2s;
     }
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__link {
+        font-size: 18px;
+        color: #181817;
+        text-decoration: none;
+
+        &--active {
+            color: #ff9f0e;
+            font-weight: 700;
+        }
+    }
+
+}
+
+
+.socials {
+    display: flex;
+    gap: 8px;
+
+    .icon {
+
+        &-instagram {
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+        }
+
+        &-facebook {}
+    }
+
+    .social {
+        width: 40px;
+        height: 40px;
+        color: #ff9f0e;
+    }
+}
+
+
+body.modal-open {
+    overflow: hidden;
+}
+
+body.modal-open .modal-overlay {
+    overflow: auto;
+    display: block;
 }

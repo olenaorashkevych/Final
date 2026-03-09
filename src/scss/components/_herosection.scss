@@ -8,12 +8,34 @@
     background-repeat: no-repeat;
     padding-bottom: 160px;
 
+    @include respond(lg) {
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .container {
+
+        @include respond(lg) {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+        }
+    }
+
     &__title {
         font-size: 72px;
         color: #181817;
         max-width: 635px;
         margin-top: 195px;
         letter-spacing: 2px;
+
+        @include respond(lg) {
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 32px;
+        }
     }
 
     &__subtitle {
@@ -21,6 +43,12 @@
         color: #181817;
         max-width: 500px;
         margin: 50px 0;
+
+        @include respond(lg) {
+            margin-top: 24px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__button {
@@ -32,6 +60,7 @@
         color: #fff;
         border: none;
         cursor: pointer;
+        z-index: 999;
 
         &:hover {
             background: #ffb84d;
@@ -53,21 +82,51 @@
         &-1 {
             top: 220px;
             right: 62px;
+
+            @include respond(lg) {
+                display: none;
+            }
         }
 
         &-2 {
             top: 77%;
             right: 51%;
+
+            @include respond(lg) {
+                top: initial;
+                right: initial;
+                bottom: 0;
+                left: 26%;
+            }
+
+            @include respond(md) {
+                left: 17%;
+            }
         }
 
         &-3 {
             top: 161px;
             right: 32%;
+
+            @include respond(lg) {
+                top: initial;
+                right: initial;
+                bottom: -60px;
+                left: 43%;
+                width: 40px;
+            }
         }
 
         &-4 {
             top: 45%;
             right: 3%;
+
+            @include respond(lg) {
+                top: initial;
+                right: 20%;
+                bottom: 0;
+                width: 40px;
+            }
         }
 
         &-5 {
@@ -76,6 +135,14 @@
             color: var(--dog-landing-3-s2);
             height: 48px;
             width: 48px;
+
+            @include respond(lg) {
+                top: initial;
+                right: initial;
+                bottom: -67px;
+                left: 30%;
+                width: 40px;
+            }
         }
 
         &-6 {
@@ -84,6 +151,13 @@
             color: var(--dog-landing-3-c9);
             height: 48px;
             width: 48px;
+
+            @include respond(lg) {
+                top: initial;
+                right: 30%;
+                bottom: -50px;
+                width: 40px;
+            }
         }
 
         &-7 {
@@ -92,6 +166,13 @@
             color: var(--dog-landing-3-c10);
             height: 48px;
             width: 48px;
+
+            @include respond(lg) {
+                top: 18%;
+                right: -11px;
+                width: 40px;
+                transform: rotate(285deg);
+            }
         }
 
         &-8 {
@@ -100,6 +181,11 @@
             color: var(--dog-landing-3-s2);
             height: 64px;
             width: 68px;
+
+            @include respond(lg) {
+                display: none;
+            }
         }
+
     }
 }

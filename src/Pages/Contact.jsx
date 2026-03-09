@@ -1,3 +1,5 @@
+import ContactForm from "../components/form/ContactForm";
+
 export default function Contact() {
   return (
     <section className="contact">
@@ -28,103 +30,23 @@ export default function Contact() {
       </svg>
 
       <div className="container">
-        <div className="contact__wrapper">
-          {/* Left dog */}
-          <img
-            src="/images/expertDog1Small.png"
-            alt="Dog"
-            className="contact__dog contact__dog--left"
-          />
 
-          {/* Center content */}
-          <div className="contact__center">
-            <div className="contact__header">
-              <h2 className="contact__title">
-                Our experts will take care of your friend
-              </h2>
-              <p className="contact__subtitle">
-                Fill out the form so we can contact you!
-              </p>
-            </div>
+        {/* Left dog */}
+        <img
+          src="/images/expertDog1Small.png"
+          alt="Dog"
+          className="contact__dog contact__dog--left"
+        />
 
-            <form className="contact__form">
-            <label className="contact__field">
-  <span className="contact__placeholder">
-    <svg className="contact__icon">
-      <use href="/images/sprite.svg#people" />
-    </svg>
-    Your name
-  </span>
+        <ContactForm />
 
-  <input
-    type="text"
-    className="contact__input"
-  />
-</label>
+        {/* Right dog */}
+        <img
+          src="/images/expertDog2min1.png"
+          alt="Dog"
+          className="contact__dog contact__dog--right"
+        />
 
-<label className="contact__field">
-  <span className="contact__placeholder">
-    <svg className="contact__icon">
-      <use href="/images/sprite.svg#dog" />
-    </svg>
-    Pet name
-  </span>
-
-  <input
-    type="text"
-    className="contact__input"
-  />
-</label>
-
-
-<label className="contact__field">
-  <span className="contact__placeholder">
-    <svg className="contact__icon">
-      <use href="/images/sprite.svg#phone" />
-    </svg>
-    Your phone
-  </span>
-
-  <input
-    type="text"
-    className="contact__input"
-  />
-</label>
-
-
-<label className="contact__field">
-  <span className="contact__placeholder">
-    <svg className="contact__icon">
-      <use href="/images/sprite.svg#email" />
-    </svg>
-    Your email
-  </span>
-
-  <input
-    type="text"
-    className="contact__input"
-  />
-</label>
-
-
-              <button type="submit" className="contact__button btn">
-                Contact us
-              </button>
-
-              <label className="contact__agree">
-                <input type="checkbox" />
-                <span>I agree to the privacy policy</span>
-              </label>
-            </form>
-          </div>
-
-          {/* Right dog */}
-          <img
-            src="/images/expertDog2min1.png"
-            alt="Dog"
-            className="contact__dog contact__dog--right"
-          />
-        </div>
       </div>
     </section>
   );

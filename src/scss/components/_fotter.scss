@@ -46,13 +46,26 @@
     &__socials {
         display: flex;
         gap: 8px;
+
+        .icon {
+
+            &-instagram {
+                fill: none;
+                stroke: currentColor;
+                stroke-width: 2;
+            }
+
+            &-facebook {}
+        }
     }
 
     &__social {
         width: 40px;
         height: 40px;
-        fill: #ff9f0e;
+        color: #ff9f0e;
     }
+
+
 
     /* NAV */
     &__nav {
@@ -93,7 +106,8 @@
     &__field-icon {
         width: 24px;
         height: 24px;
-        fill: #ff9f0e;
+        color: #ff9f0e;
+
     }
 
     &__input {
@@ -136,4 +150,6 @@
         width: 292px;
         height: auto;
     }
+
+
 }

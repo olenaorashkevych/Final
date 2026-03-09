@@ -1,3 +1,7 @@
+import { Link } from "react-router-dom"
+import SvgIcon from "../ui/SvgIcon"
+import NavMobile from "./NavMobile";
+import Icons from "./Icons";
 export default function Footer() {
   return (
     <footer className="footer">
@@ -6,31 +10,18 @@ export default function Footer() {
         {/* LEFT: logo + socials */}
         <div className="footer__brand">
           <div className="footer__logo">
-            <svg className="footer__logo-icon">
-              <use href="/images/sprite.svg#dog-lapa" />
-            </svg>
-            <span className="footer__logo-text">
-              <strong>dog</strong>club
-            </span>
+            <Link to="/" className="footer__logo">
+              <img src="./images/logo.svg" alt="" className="footer__logo-img" />
+            </Link>
+
           </div>
 
-          <div className="footer__socials">
-            <svg className="footer__social">
-              <use href="/images/sprite.svg#instagram" />
-            </svg>
-            <svg className="footer__social">
-              <use href="/images/sprite.svg#facebook" />
-            </svg>
-          </div>
+          <Icons />
         </div>
 
         {/* CENTER: nav */}
-        <nav className="footer__nav">
-          <a href="#" className="footer__link">Less talk</a>
-          <a href="#" className="footer__link footer__link--active">Services category</a>
-          <a href="#" className="footer__link">Happy customer</a>
-          <a href="#" className="footer__link">Contact</a>
-        </nav>
+        <NavMobile />
+
 
         {/* RIGHT: subscribe */}
         <div className="footer__subscribe">
@@ -62,11 +53,13 @@ export default function Footer() {
         </div>
 
         {/* DOG IMAGE */}
-        <img
-          src="/images/image-5.png"
+        {/* <img
+          src="/images/footerDogsm.png"
           alt="Dog"
           className="footer__dog"
-        />
+        /> */}
+
+
 
       </div>
     </footer>

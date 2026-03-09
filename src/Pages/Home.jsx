@@ -4,9 +4,10 @@ import LessTalkSection from "../Pages/Lesstalk";
 import ServicesCategory from "../Pages/ServicesCategory";
 import HappyCustomer from "../Pages/HappyCustomer";
 import Contact from "../Pages/Contact";
-import Footer from "../components/layout/Footer";
+import ContactModal from "../components/ContactModal";
 
 export default function Home() {
+
   return (
     <>
       <HeroSection />
@@ -14,7 +15,7 @@ export default function Home() {
       <ServicesCategory />
       <HappyCustomer />
       <Contact />
-
+      <ContactModal />
     </>
   );
 }

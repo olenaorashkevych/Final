@@ -44,7 +44,7 @@ for (const file of files) {
 
     // 👇 додаємо fill="currentColor"
     symbols.push(
-        `<symbol id="${id}" viewBox="${viewBox}" fill="currentColor">${inner}</symbol>`
+        `<symbol id="${id}" viewBox="${viewBox}">${inner}</symbol>`
     );
 }
 

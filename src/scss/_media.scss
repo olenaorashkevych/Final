@@ -16,6 +16,12 @@
             @content;
         }
     }
+
+    @else if $breakpoint ==xlg {
+        @media screen and (max-width: 1440px) {
+            @content;
+        }
+    }
 }
 
 // Приклад:

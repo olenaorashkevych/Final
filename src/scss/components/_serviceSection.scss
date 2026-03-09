@@ -1,5 +1,14 @@
 .services {
-    // padding: 120px 0;
+    padding-bottom: 20px;
+
+    &__img {
+        position: absolute;
+        top: -52px;
+        right: -7px;
+
+    }
+
+
 
     &__title {
         font-size: 56px;

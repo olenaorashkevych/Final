@@ -14,6 +14,14 @@
             width: 183px;
             height: auto;
 
+            @include respond(lg) {
+                width: 160px;
+            }
+
+            @include respond(md) {
+                width: 92px;
+            }
+
         }
     }
 
@@ -37,6 +45,14 @@
     &__nav {
         display: flex;
         gap: 48px;
+
+        @include respond(xlg) {
+            gap: 20px;
+        }
+
+        @include respond(lg) {
+            display: none;
+        }
 
         a {
             font-size: 18px;
@@ -72,6 +88,10 @@
             &:hover {
                 background: #ffb84d;
             }
+
+            @include respond(lg) {
+                display: none;
+            }
         }
 
         .header__cart {
@@ -85,5 +105,24 @@
                 color: #ffb84d;
             }
         }
+    }
+
+    .burger {
+        display: none;
+
+        @include respond(xlg) {
+            display: none;
+        }
+
+        @include respond(lg) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FF9F0E;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        &__icon {}
     }
 }

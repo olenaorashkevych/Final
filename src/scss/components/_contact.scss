@@ -1,104 +1,140 @@
 .contact {
     position: relative;
-    padding: 160px 0;
-
-    &__bg {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-    }
-
-    .container {
-        position: relative;
-        z-index: 1;
-    }
-
-    /* HEADER CENTERED */
-    &__header {
-        text-align: center;
-        max-width: 600px;
-        margin: 0 auto 48px;
-    }
-
-    &__title {
-        font-size: 56px;
-        color: #181817;
-        margin-bottom: 16px;
-        font-weight: 400;
-    }
-
-    &__subtitle {
-        font-size: 18px;
-        color: #839aa9;
-    }
-
-    /* DOGS + FORM ROW */
-    &__wrapper {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        gap: 40px;
-    }
-
-    &__dog-left,
-    &__dog-right {
-        flex: 0 0 auto;
-    }
-
-    &__form {
-        flex: 0 1 600px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    &__field {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border: 1px solid #ff9f0e;
-        border-radius: 8px;
-        padding: 8px 16px;
-    }
-
-    &__input {
-        border: none;
-        outline: none;
-        flex: 1;
-        font-size: 18px;
-        color: var(--dog-landing-3-s1);
-
-        &::placeholder {
-            color: #ff9f0e;
-        }
-    }
-
-    &__button {
-
-        margin-top: 8px;
-        padding: 16px 32px;
-        border-radius: 8px;
-        background: #ff9f0e;
-        color: #fff;
-        border: none;
-        font-size: 18px;
-        font-weight: 500;
-        cursor: pointer;
-
-    }
-
-    &__agree {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 12px;
-        color: #839aa9;
-        margin-top: 8px;
-    }
+    padding: 140px 0 160px; // верхній відступ під фон
+    margin-bottom: 150px;
+    overflow: hidden;
 }
 
+/* SVG BACKGROUND */
+.contact__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* CENTER CONTENT */
+.contact__center {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact__header {
+    margin-bottom: 40px;
+}
+
+.contact__title {
+    font-size: 56px;
+    line-height: 1.15;
+    font-weight: 400;
+    color: #181817;
+    margin-bottom: 16px;
+}
+
+.contact__subtitle {
+    font-size: 18px;
+    color: #839aa9;
+}
+
+/* DOGS */
+.contact__dog {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.contact__dog--left {
+    left: -60px;
+}
+
+.contact__dog--right {
+    right: -120px;
+}
+
+/* FORM */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+}
+
+/* FIELD */
+.contact__field {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    height: 48px; // рівно 48px
+    padding: 0 18px;
+    box-sizing: border-box;
+
+    border: 2px solid #ff9f0e;
+    border-radius: 12px;
+    background: #fff;
+}
+
+/* ICON + LABEL */
 .contact__placeholder {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: #ff9f0e;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.contact__icon {
+    width: 32px;
+    height: 32px;
+}
+
+/* INPUT */
+.contact__input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    line-height: 1;
+    background: transparent;
+    color: #181817;
+}
+
+/* BUTTON */
+.contact__button {
+    margin: 20px auto 0;
+    padding: 16px 36px;
+    border-radius: 12px;
+    background: #ff9f0e;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.contact__button:hover {
+    background: #ffb84d;
+}
+
+/* AGREE */
+.contact__agree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #839aa9;
+    margin-top: 12px;
 }
