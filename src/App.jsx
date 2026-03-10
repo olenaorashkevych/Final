@@ -1,12 +1,12 @@
 import { Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/Home'
 
-import Layout from './Pages/Layout'
-import ErrorPage from './Pages/ErrorPage'
-import Lesstalk from './Pages/Lesstalk'
-import Contact from './Pages/Contact'
-import HappyCustomer from './Pages/HappyCustomer'
-import ServicesCategory from './Pages/ServicesCategory'
+import Layout from './pages/Layout'
+import ErrorPage from './pages/ErrorPage'
+import Lesstalk from './pages/Lesstalk'
+import Contact from './pages/Contact'
+import HappyCustomer from './pages/HappyCustomer'
+import ServicesCategory from './pages/ServicesCategory'
 import UiContext from './context/UiContext'
 
 export default function App() {

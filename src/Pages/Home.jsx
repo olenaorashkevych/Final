@@ -1,9 +1,9 @@
 
-import HeroSection from "../Pages/HeroSection";
-import LessTalkSection from "../Pages/Lesstalk";
-import ServicesCategory from "../Pages/ServicesCategory";
-import HappyCustomer from "../Pages/HappyCustomer";
-import Contact from "../Pages/Contact";
+import HeroSection from "./HeroSection";
+import LessTalkSection from "./Lesstalk";
+import ServicesCategory from "./ServicesCategory";
+import HappyCustomer from "./HappyCustomer";
+import Contact from "./Contact";
 import ContactModal from "../components/ContactModal";
 
 export default function Home() {
