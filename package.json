@@ -8,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "sprite": "node scripts/build-sprite.mjs",
-    "deploy": "gh-pages -d dist"
+    "sprite": "node scripts/build-sprite.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",
