@@ -1,20 +1,20 @@
-@import "./media";
-@import "./variables";
-@import "./base";
+@use "./variables" as *;
+@use "./media" as *;
+@use "./base" as *;
 
-@import "./utils/buttons";
+@use "./utils/buttons" as *;
 
-@import "./components/header";
-@import "./components/register";
+@use "./components/header" as *;
+@use "./components/register" as *;
 
-@import "./components/herosection";
-@import "./components/lesstalksection";
-@import "./components/serviceSection";
-@import "./components/happyCustomer";
-@import "./components/contact";
-@import "./components/fotter";
-@import "./components/contactModal";
-@import "./components/nutrition";
-@import "./components/cartlist";
-@import "./components/mobilemenu";
-@import "./components/SortingModal";
+@use "./components/herosection" as *;
+@use "./components/lesstalksection" as *;
+@use "./components/serviceSection" as *;
+@use "./components/happyCustomer" as *;
+@use "./components/contact" as *;
+@use "./components/fotter" as *;
+@use "./components/contactModal" as *;
+@use "./components/nutrition" as *;
+@use "./components/cartlist" as *;
+@use "./components/SortingModal" as *;
+@use "./components/MobileMenu" as *;
