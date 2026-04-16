@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SvgIcon from "../components/ui/SvgIcon";
 
 export default function ServicesSection() {
   return (
@@ -36,9 +37,7 @@ export default function ServicesSection() {
           <div className="services__card">
             <div className="services__card-content">
               <div className="services__icon">
-                <svg className="services__icon-3">
-                  <use href="public/images/sprite.svg#service3" />
-                </svg>
+                <SvgIcon id="service3" className="services__icon-3" />
               </div>
               <p className="services__name">Training</p>
             </div>
@@ -47,9 +46,7 @@ export default function ServicesSection() {
           <div className="services__card">
             <div className="services__card-content">
               <div className="services__icon">
-                <svg className="services__icon-4">
-                  <use href="public/images/sprite.svg#service4" />
-                </svg>
+                <SvgIcon id="service4" className="services__icon-4" />
               </div>
               <p className="services__name">Bathing</p>
             </div>
@@ -58,9 +55,8 @@ export default function ServicesSection() {
           <div className="services__card services__card--more">
             <div className="services__card-content">
               <p className="services__more-text">
-                more services  <svg className="services__icon-5">
-                  <use href="public/images/sprite.svg#Arrowtiny" />
-                </svg>
+                more services
+                <SvgIcon id="Arrowtiny" className="services__icon-5" />
               </p>
             </div>
           </div>
