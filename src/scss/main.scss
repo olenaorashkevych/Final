@@ -18,3 +18,7 @@
 @use "./components/cartlist" as *;
 @use "./components/SortingModal" as *;
 @use "./components/mobilemenu" as *;
+
+body {
+    margin: 0;
+}

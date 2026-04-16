@@ -1661,4 +1661,8 @@ body.modal-open .modal-overlay {
   stroke: #ff9f0e;
   stroke-width: 2;
   fill: none;
+}
+
+body {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
