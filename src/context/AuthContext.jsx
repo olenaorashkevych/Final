@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
 
         if (!token) return;
 
-        fetch("http://localhost:5000/auth/isAuth", {
+        fetch(`${import.meta.env.VITE_API_URL}/auth/isAuth`, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
