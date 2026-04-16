@@ -1,0 +1,139 @@
+.products {
+    padding: 40px 0;
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+.product-card {
+    width: calc(25% - 15px);
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        transform: translateY(-3px);
+    }
+
+    // 🔻 Адаптив через mixin
+    @include respond(xlg) {
+        width: calc(33.333% - 14px);
+    }
+
+    @include respond(md) {
+        width: calc(50% - 10px);
+    }
+
+    @include respond(sm) {
+        width: 100%;
+    }
+
+    &__image {
+        height: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        img {
+            max-height: 160px;
+            object-fit: contain;
+        }
+    }
+
+    &__code {
+        font-size: 12px;
+        color: #839aa9;
+        margin-bottom: 6px;
+    }
+
+    &__title {
+        font-size: 14px;
+        color: #181817;
+        margin-bottom: 10px;
+        min-height: 38px; // щоб вирівняти картки
+    }
+
+    &__price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 14px;
+
+        &-current {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        &-old {
+            font-size: 12px;
+            color: #839aa9;
+            text-decoration: line-through;
+        }
+    }
+
+    &__btn {
+        background: #ff9f0e;
+        border: none;
+        color: #fff;
+        padding: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 500;
+
+        transition: background 0.2s ease;
+
+        &:hover {
+            background: #e38c00;
+        }
+
+        &--remove {
+            background: #e74c3c;
+
+            &:hover {
+                background: #c0392b;
+            }
+        }
+    }
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &__star {
+        width: 16px;
+        height: 15px;
+        flex-shrink: 0;
+
+        path {
+            transition: fill 0.2s ease;
+        }
+
+        &--active {
+            path {
+                fill: #fcb62a;
+            }
+        }
+
+        &--inactive {
+            path {
+                fill: #839aa9;
+            }
+        }
+    }
+}

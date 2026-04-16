@@ -1,0 +1,103 @@
+/* Кнопка */
+.open-btn {
+    padding: 10px 16px;
+    background: #ff9f0e;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+/* затемнення */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* сам блок */
+.modal {
+    width: 100%;
+    background: white;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 16px 20px 24px;
+    animation: slideUp 0.25s ease;
+}
+
+/* анімація */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* заголовок */
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff9f0e;
+    margin-bottom: 24px;
+}
+
+/* список */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* пункт */
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #181817;
+    cursor: pointer;
+}
+
+/* активний */
+.item.active {
+    color: #ff9f0e;
+    font-weight: 500;
+}
+
+.nutrition-title {
+    font-size: 32px;
+    color: #ff9f0e;
+    margin: 0;
+}
+
+.nutrition-button {
+    display: flex;
+    gap: 10px;
+    padding: 12px 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    color: #181817;
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+    &:hover {
+        color: #ff9f0e;
+    }
+
+    svg {
+        stroke-width: 1.8;
+        fill: none;
+        transform: rotate(90deg);
+        color: #ff9f0e;
+        font-size: 18px;
+        stroke: currentColor;
+    }
+}

@@ -1,0 +1,119 @@
+/* Як нас знайти секція */
+.how_to_find_us-section {
+    flex-direction: column;
+    gap: 63px;
+}
+
+.how_to_find_us-section span {
+    color: var(--beauty-landing-2-s2);
+}
+
+.how_to_find_us-section .sign-up {
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    height: 482px;
+    color: var(--beauty-landing-2-c1)
+}
+
+.map-container {
+    border-radius: 32px;
+    max-width: 605px;
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+.sign-up {
+    gap: 10px;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--beauty-landing-2-background);
+    background-color: var(--beauty-landing-2-c1);
+    background-image: url(./images/backgroundf.png);
+    border-radius: 32px;
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-top: 32px;
+    padding-bottom: 30px;
+}
+
+.sign-up label {
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--beauty-landing-2-background);
+}
+
+.sign-up input {
+    font-weight: 400;
+    font-size: 13px;
+    width: 100%;
+    background: none;
+    color: var(--beauty-landing-2-background);
+    border-radius: 32px;
+    padding: 18px;
+    border: 2px solid var(--beauty-landing-2-s5);
+}
+
+.sign-up p {
+    color: #fff;
+    padding-top: 6px;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: var(--beauty-landing-2-background);
+
+}
+
+.sign-up input::placeholder {
+    color: var(--beauty-landing-2-background);
+    opacity: 1;
+}
+
+.sign-up-form {
+    width: 100%;
+
+
+}
+
+.inputs-wraper {
+    margin-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sign-up-form button {
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--beauty-landing-2-background);
+}
+
+.sign-up .privacy-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--beauty-landing-2-s5);
+
+}
+
+.privacy-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--beauty-landing-2-s5);
+
+}
+
+.how-to-find-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1032px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 40px;
+
+}

@@ -1,0 +1,109 @@
+/* Блок less-talk */
+.less-talk {
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-content: flex-end;
+        margin-top: 210px;
+        padding-bottom: 160px;
+
+        @include respond(lg2) {
+            margin-top: 130px;
+        }
+    }
+
+    &__image {
+
+        .img-dog {
+            position: absolute;
+            left: -122px;
+            top: -152px;
+
+            @include respond(lg2) {
+                display: none;
+            }
+        }
+
+        .img-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 72px;
+            height: 48px;
+            color: var(--dog-landing-3-c6);
+            top: 467px;
+            left: 247px;
+
+            @include respond(md2) {
+                display: none;
+            }
+        }
+
+        .img-button {
+            position: absolute;
+            top: -7px;
+            left: 337px;
+
+            @include respond(lg2) {
+                top: initial;
+                bottom: 10%;
+                left: 40%;
+            }
+        }
+    }
+
+    &__content {
+
+        display: flex;
+        flex-direction: column;
+        max-width: 640px;
+        width: 100%;
+
+        @include respond(lg2) {
+            margin: 0 auto;
+
+        }
+
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 56px;
+        color: #181817;
+        margin-bottom: 32px;
+
+        @include respond(md2) {
+            font-size: 32px;
+        }
+    }
+
+    &__text {
+        font-size: 22px;
+        color: #181817;
+        margin-bottom: 40px;
+        font-weight: 400;
+        line-height: 155%;
+    }
+
+    &__button {
+        padding: 16px 32px;
+        border-radius: 8px;
+        background: #ff9f0e;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        width: fit-content;
+
+        &:hover {
+            background: #ffb84d;
+        }
+
+        &-lower {
+            text-transform: lowercase;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint ==sm {
+        @media screen and (max-width: 480px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==md {
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==md2 {
+        @media screen and (max-width: 968px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==lg {
+        @media screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==lg2 {
+        @media screen and (max-width: 1300px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==xlg {
+        @media screen and (max-width: 1440px) {
+            @content;
+        }
+    }
+}
+
+// Приклад:
+// .container {
+//     width: 100%;
+//     margin: 0 auto;
+
+//     @include respond(sm) {
+//       max-width: 480px;
+//     }
+
+//     @include respond(md) {
+//       max-width: 768px;
+//       padding: 0 24px;
+//     }
+
+//     @include respond(lg) {
+//       max-width: 1200px;
+//       padding: 0 32px;
+//     }
+//   }
